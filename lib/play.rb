@@ -36,5 +36,9 @@ def turn(board)
 end
 
 def play(board)
-
+  players_turns = 1
+  9.times do
+    turn(board)
+    break
+  end
 end 
