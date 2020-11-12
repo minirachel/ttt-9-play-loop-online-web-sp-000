@@ -37,8 +37,8 @@ end
 
 def play(board)
   players_turns = 1
-  9.times do
+  until players_turns == 9
     turn(board)
-    break
+    players_turns += 1
   end
 end
